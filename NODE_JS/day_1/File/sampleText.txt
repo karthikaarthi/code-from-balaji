@@ -1,0 +1,3 @@
+Sam,10,sam@gmail.com,sam1234,1000
+Ram,10,ram@gmail.com,ram1234,1000
+Kumar,10,kumar@gmail.com,kumar1234,1000
