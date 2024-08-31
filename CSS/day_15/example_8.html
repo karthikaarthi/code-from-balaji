@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      #container {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+      }
+
+      @media screen and (width: 600px) {
+        #container {
+          height: 100px;
+          width: 100px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: yellow;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+  </body>
+</html>
