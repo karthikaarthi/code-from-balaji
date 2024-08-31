@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Using object literals */
+      let user = {
+        name: "Ram",
+        age: 10,
+        email: "ram@gmail.com",
+        password: "ram1234",
+        hobbies: ["code", "eat", "sleep"],
+        job: { job1: "Tester", job2: "Web dev" },
+        salary: 1000.0,
+        greetMessage: function () {
+          console.log("\n\nWelcome Message");
+          console.log("Name : ", user.name);
+          console.log("Age : ", user.age);
+          console.log("Email : ", user.email);
+          console.log("Password : ", user.password);
+          console.log("Hobbies : ", user.hobbies);
+          console.log("Hobbies : ", user.hobbies[0]);
+          console.log("Hobbies : ", user.hobbies[1]);
+          console.log("Hobbies : ", user.hobbies[2]);
+          console.log("Jobs : ", user.job);
+          console.log("Job1 : ", user.job.job1);
+          console.log("Job2 : ", user.job.job2);
+          console.log("Salary : ", user.salary);
+        }
+      };
+
+      console.log("Name : ", user.name);
+      console.log("Age : ", user.age);
+      console.log("Email : ", user.email);
+      console.log("Password : ", user.password);
+      console.log("Hobbies : ", user.hobbies);
+      console.log("Hobbies : ", user.hobbies[0]);
+      console.log("Hobbies : ", user.hobbies[1]);
+      console.log("Hobbies : ", user.hobbies[2]);
+      console.log("Jobs : ", user.job);
+      console.log("Job1 : ", user.job.job1);
+      console.log("Job2 : ", user.job.job2);
+      console.log("Salary : ", user.salary);
+      user.greetMessage();
+    </script>
+  </body>
+</html>

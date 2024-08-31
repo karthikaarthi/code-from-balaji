@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading">Sample Text</h1>
+    <br>
+    <button id="button">Change Style</button>
+    <script>
+      const heading = document.getElementById("heading");
+      const button = document.getElementById("button");
+
+      button.addEventListener("click", () => {
+        heading.style.color = "red";
+        heading.style.border = "2px solid black";
+        heading.style.backgroundColor = "yellow";
+        heading.style.padding = "10px";
+        
+        button.style.padding = "5px";
+        button.style.backgroundColor = "black";
+        button.style.color = "white";
+      });
+    </script>
+  </body>
+</html>

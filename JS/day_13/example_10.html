@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="button">Click Me</button> 
+    <script>
+      const button = document.getElementById("button");
+      button.onmouseup = () => {
+        console.log("Function 1 work ....");
+      }
+
+      button.addEventListener("mouseup", () => {
+        console.log("Function 2 work ....");
+      });
+    </script>
+  </body>
+</html>

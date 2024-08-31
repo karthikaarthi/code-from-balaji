@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      window.onload = () => {
+        window.alert("Document Loading ....");
+      }
+
+      //window.addEventListener("load", () => {
+      //  window.alert("Document Loading ....");
+      //});
+
+      //window.onunload = () => {
+      //  window.alert("Document Unloading .....");
+      //}
+
+      let i = 1;
+      window.onresize = () => {
+        console.log("Function Call Count: ", i++);
+      }
+
+      //window.addEventListener("resize", () => {
+      //  console.log("Function Call Count: ", i++);
+      //});
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="button">Click Me</button> 
+    <script>
+      const button = document.getElementById("button");
+      let i = 1;
+      button.onmousemove = () => {
+        console.log("Function call count: ", i++);
+      }
+
+      button.addEventListener("mousemove", () => {
+        console.log("Function call count: ", i++);
+      });
+    </script>
+  </body>
+</html>

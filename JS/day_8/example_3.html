@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const users = [
+        {
+          id: 1,
+          name: "Ram",
+          email: "ram@gmail.com",
+          password: "ram1234"
+        },
+        {
+          id: 2,
+          name: "Sam",
+          email: "sam@gmail.com",
+          password: "sam1234"
+        },
+        {
+          id: 3,
+          name: "Kumar",
+          email: "kumar@gmail.com",
+          password: "kumar1234"
+        }
+      ];
+
+      let table = `
+        <table border="1">
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+          </tr>
+          {{body}}
+        </table> <br>
+      `;
+
+      let body = "";
+      for (let user of users) {
+        body += `
+          <tr>
+            <td>${user.id}</td>
+            <td>${user.name}</td>
+            <td>${user.email}</td>
+            <td>${user.password}</td>
+          </tr>
+        `;
+      }
+
+      table = table.replace("{{body}}", body);
+      document.write(table);
+      document.writeln(table);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <p>Para</p>
+    <script>
+      const element = document.querySelector("h1");
+      const body = element.parentElement;
+
+      setTimeout(() => {
+        element.remove();
+      }, 3000);
+
+      setTimeout(function() {
+        body.removeChild(body.children[0]);
+      }, 4000);
+
+    </script>
+  </body>
+</html>

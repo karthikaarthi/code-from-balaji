@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input">
+    <button id="button">Add New Name</button>
+    <br><br>
+    <ul id="ul"></ul>
+    <script>
+      const input = document.getElementById("input");
+      const button = document.getElementById("button");
+      const ul = document.getElementById("ul");
+
+      button.onclick = () => {
+        const li = document.createElement("li");
+        li.innerHTML = input.value;
+        ul.append(li);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input">
+    <script>
+      const input = document.getElementById("input");
+      input.onselect = () => {
+        console.log("Some Text Selected ...."); 
+      }
+
+      input.addEventListener("select", () => {
+        console.log("Some Text Selected ....");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let names = {fname: "Ram", sname: "Kumar"};
+      let user = Object.create(names);
+      user.email = "ram@gmail.com";
+      user.password = "ram1234";
+
+      console.log("FirstName : ", user.fname);
+      console.log("SecondName : ", user.sname);
+      console.log("Email : ", user.email);
+      console.log("Password : ", user.password);
+    </script>
+  </body>
+</html>

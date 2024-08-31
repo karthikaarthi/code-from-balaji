@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="parent">
+      <h1>Child 1</h1>
+      <h2>Child 2</h2>
+      <h3>Child 3</h3>
+    </div>
+    <script>
+      const parent = document.getElementById("parent");
+      // get content
+      let content = parent.textContent;
+      console.log(content);
+
+      setTimeout(() => {
+        // set content
+        // parent.textContent = "<h1> Welcome To Js </h1>";
+        parent.textContent = "<h1> Welcome To Js </h1>";
+      }, 3000);
+
+    </script>
+  </body>
+</html>

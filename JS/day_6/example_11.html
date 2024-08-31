@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       const add = (num1, num2) => {
+          return num1 + num2;
+       }
+
+       function result(cb, num1, num2) {
+         return cb(num1, num2);
+       }
+
+       let sum = result((num1, num2) => {
+            return num1 + num2;
+       }, 100, 100);
+       
+       console.log("Sum : ", sum);
+       console.log("Sum : ", add(100, 100));
+    </script>
+</body>
+
+</html>

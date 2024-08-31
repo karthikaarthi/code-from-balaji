@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+      // let a = arr[0];
+      // let b = arr[1];
+      // let c = arr[2];
+      // console.log(`A: ${a}  B: ${b}  C: ${c}`);
+
+      let [a, b, c] = arr;
+      console.log(`A: ${a}  B: ${b}  C: ${c}`);
+
+      [a, b, ...c] = arr;
+      console.log(`A: ${a}  B: ${b}  C: ${c}`);
+
+    </script>
+  </body>
+</html>
+

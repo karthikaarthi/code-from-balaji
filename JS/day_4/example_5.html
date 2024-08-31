@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Template Literals */
+      const dataset = {
+        name: "User",
+        email: "user@gmail.com",
+        password: 1234
+      }
+
+      const user1 = "Name : " + dataset.name + " Email : " + dataset.email + " Password : " + String(dataset.password);
+      const user2 = `Name : ${dataset.name} Email : ${dataset.email} Password : ${dataset.password}`;
+
+      console.log(user1);
+      console.log(user2);
+
+    </script>
+  </body>
+</html>
+

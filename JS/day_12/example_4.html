@@ -1,0 +1,41 @@
+
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        transition: 2s;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <br>
+    <button id="btn-1">Add Style</button>
+    <button id="btn-2">Remove Style</button>
+    <script>
+      const container = document.getElementById("container");
+      const addStyleBTN = document.getElementById("btn-1");
+      const removeStyleBTN = document.getElementById("btn-2");
+
+      console.log(container.getAttribute("id"));
+
+      addStyleBTN.addEventListener("click", () => {
+        container.setAttribute("class", "box");
+      });
+
+      removeStyleBTN.addEventListener("click", () => {
+        container.removeAttribute("class");
+      }); 
+
+      console.log("Output: ", container.hasAttribute("class"));
+      console.log(container.attributes);
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class User {
+        name = null;
+        age = null;
+        email = null;
+        password = null;
+
+        constructor(name, age, email, password) {
+          this.name = name;
+          this.age = age;
+          this.email = email;
+          this.password = password;
+        }
+
+        greetMessage() {
+          console.log("\nName : ", this.name);
+          console.log("Age : ", this.age);
+          console.log("Email : ", this.email);
+          console.log("Password : ", this.password);
+        }
+      }
+
+      const user1 = new User("Ram", 10, "ram@gmail.com", "ram1234");
+      user1.greetMessage();
+
+      const user2 = new User("Sam", 10, "sam@gmail.com", "sam1234");
+      user2.greetMessage();
+
+    </script>
+  </body>
+</html>

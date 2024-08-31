@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn-1">Get Numbers</button>
+    <button id="btn-2">Add</button>
+    <script>
+      const getNumBTN = document.getElementById("btn-1");
+      const addBTN = document.getElementById("btn-2");
+     
+      let num1, num2;
+
+      getNumBTN.onclick = () => {
+        num1 = Number(window.prompt("Enter Number 1 ..."));
+        num2 = Number(window.prompt("Enter Number 2 ..."));
+      }
+
+      addBTN.onclick = () => {
+        console.log("Sum: ", num1 + num2);
+      }
+
+    </script>
+  </body>
+</html>

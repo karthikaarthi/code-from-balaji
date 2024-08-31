@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <select id="select">
+      <option value="food">Food</option>
+      <option value="eat">Eat</option>
+      <option value="sleep">Sleep</option>
+    </select>
+    <script>
+     const select = document.getElementById("select");
+     select.onchange = () => {
+      console.log("Value: ", select.value);
+     }
+
+     select.addEventListener("change", () => {
+      console.log("Value: ", select.value);
+     });
+    </script>
+  </body>
+</html>

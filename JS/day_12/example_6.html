@@ -1,0 +1,61 @@
+
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+      }
+
+      .big-box {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+      }
+
+      .br {
+        border-radius: 100%;
+      }
+
+      .box-shadow {
+        box-shadow: 5px 5px 20px black;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="container" class="" ></div>
+    <script>
+      const container = document.getElementById("container");
+
+      // add method
+      setTimeout(() => {
+        container.classList.add("box", "br");
+      }, 2000);
+
+      // remove method
+      setTimeout(() => {
+        container.classList.remove("br");
+      }, 4000);
+
+      // contains method
+      // console.log(h1.classList.contains("box"));
+
+       // replace method
+       setTimeout(() => {
+        container.classList.replace("box", "big-box")
+      }, 3000);
+
+      // toggle method
+      let i = 1;
+      const id = setInterval(() => {
+        container.classList.toggle("box-shadow");
+        if (i == 10) clearInterval(id);
+      }, 1000);
+
+
+    </script>
+  </body>
+</html>

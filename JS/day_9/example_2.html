@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <label>Enter Number 1: </label>
+    <input type="text" id="input-1" size="4"> 
+    <br><br>
+
+    <label>Enter Number 2:</label>
+    <input type="text" id="input-2" size="4">
+    <br><br>
+
+    <button id="button" style="width:200px;">Add</button>
+    <br>
+
+    <p id="result"></p>
+
+    <script>
+      const input1 = document.getElementById("input-1");
+      const input2 = document.getElementById("input-2");
+      const button = document.getElementById("button");
+      const result = document.getElementById("result");
+
+      button.onclick = () => {
+        let num1 = Number(input1.value);
+        let num2 = Number(input2.value);
+        result.innerHTML = `Sum: ${num1 + num2}`;
+      }
+
+    </script>
+  </body>
+</html>

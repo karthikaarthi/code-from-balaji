@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="button">Click Me</button>
+    <script>
+      const button = document.getElementById("button");
+
+      button.addEventListener("click", () => {
+        console.log("Function 1 ....");
+      });
+
+      button.addEventListener("click", clickEventHandler);
+
+      button.addEventListener("click", (event) => {
+        console.log("Current Event: ", event);
+      });
+
+      function clickEventHandler(event) {
+        console.log("Function 2 .....");
+        console.log(event);
+      }
+
+    </script>
+  </body>
+</html>

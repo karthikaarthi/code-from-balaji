@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading">Heading 1</h1>
+
+    <h3>Heading 2</h3>
+
+    <p class="para">Para</p>
+
+    <div id="container">
+      <h5>Heading 3</h5>
+    </div>
+
+    <h4>Heading 4</h4>
+
+    <script>
+      const heading1 = document.querySelector("#heading");
+      const heading2 = document.querySelector("#heading + h3");
+      const heading3 = document.querySelector("#container > h5");
+      const heading4 = document.querySelector("h4");
+      const para = document.querySelector(".para");
+
+      console.log(heading1);
+      console.log(heading2);
+      console.log(heading3);
+      console.log(heading4);
+      console.log(para);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input">
+    <script>
+      const input = document.getElementById("input");
+      input.addEventListener("keydown", (event) => {
+        console.log("Value: ", event.target.value);
+        // console.log("Value: ", input.value);
+      });
+
+      /* 
+        input.onkeydown = () => {
+          console.log("Value: ", input.value);
+        }
+      */
+    </script>
+  </body>
+</html>

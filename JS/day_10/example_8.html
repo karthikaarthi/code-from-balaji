@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Child 1</h1>
+      <h2 id="child">Child 2</h2>
+      <h3>Child 3</h3>
+    </div>
+    <script>
+      let centerChild = document.getElementById("child");
+		  console.log("PreviousNode: ",centerChild.previousSibling);
+		  console.log("NextNode : ",centerChild.nextSibling);
+		  console.log("PreviousElement : ",centerChild.previousElementSibling);
+		  console.log("NextElement : ",centerChild.nextElementSibling);
+      
+      console.log("Output: ", centerChild.hasChildNodes());
+      console.log("NodeName: ", centerChild.nodeName);
+    </script>
+  </body>
+</html>
+
+
+
+

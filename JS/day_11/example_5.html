@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        transition: 1s;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <br>
+    <button id="button">Add Style</button>
+    <script>
+      const container = document.getElementById("container");
+      const button = document.getElementById("button");
+
+      button.addEventListener("click", () => {
+        const classAttr = document.createAttribute("class");
+        container.setAttributeNode(classAttr);
+        container.className += " box";
+      });
+
+    </script>
+  </body>
+</html>

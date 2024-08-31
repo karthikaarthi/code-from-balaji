@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="parent">
+      <h1>Child 1</h1>
+      <h2>Child 2</h2>
+      <h3>Child 3</h3>
+    </div>
+    <script>
+      const parent = document.getElementById("parent");
+      console.log("ChildNodes: ", parent.childNodes);
+      console.log("ChildElement: ", parent.children);
+
+      console.log("FirstChild: ", parent.firstChild);
+      console.log("LastChild: ", parent.lastChild);
+
+      console.log("FirstElementChild: ", parent.firstElementChild);
+      console.log("LastElementChild: ", parent.lastElementChild);
+    </script>
+  </body>
+</html>

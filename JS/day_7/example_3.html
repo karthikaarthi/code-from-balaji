@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="button">Click Me</button>
+    <script>
+      const button = document.getElementById("button");
+      button.onclick = () => {
+        const boolValue = window.confirm("Say yes or no ...");
+        if (boolValue) {
+          console.log("yes");
+        } else {
+          console.log("No");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Temp</title>
+  </head>
+  <body>
+    <button id="button">Reload</button>
+    <script>
+      console.log("Host: ", location.host);
+      console.log("Host Name: ", location.hostname);
+      console.log("Origin: ", location.origin);
+      console.log("Href: ", location.href);
+      console.log("Port: ",location.port);
+      console.log("Protocol: ", location.protocol);
+      console.log("Search: ", location.search); // http://127.0.0.1:5500/day_8/example_1.html?userName=ram
+      console.log("Path: ", location.pathname);
+
+      const button = document.getElementById("button");
+      button.onclick = () => {
+        location.reload();
+      }
+    </script>
+  </body>
+</html>

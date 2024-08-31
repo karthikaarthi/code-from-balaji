@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+  
+      function add(...values) {
+       let sum = 0;
+        for (let value of values) {
+          sum += value;
+        }
+        return sum;
+      }
+
+      console.log("Sum: ", add(100, 100, 100, 100, 1000));
+
+    </script>
+  </body>
+</html>

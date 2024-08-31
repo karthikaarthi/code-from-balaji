@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let data = "Sample Text";
+
+      console.log("Length : ", data.length);
+
+      console.log("UpperCase : ", data.toUpperCase());
+      console.log("LowerCase : ", data.toUpperCase().toLowerCase());
+
+      console.log("Index : ", data.indexOf("T"));
+      console.log("LastIndex : ", data.lastIndexOf("e"));
+
+      console.log("Substring : ", data.substring(0, 3));
+      console.log("Substring : ", data.substring(data.indexOf("S"), data.indexOf("m") + 1));
+      console.log("Slice : ", data.slice(0, 3));
+
+      console.log("Split : ", "User, 10, user@gmail.com, dev, 1000".split(","));
+
+      let fname = "Ram";
+      let sname = "kumar";
+      let fullName = fname + " " + sname;
+      console.log("FullName : ", fullName);
+      console.log("FullName : ", fname.concat(" ", sname));
+
+      console.log("Name with space : ", "     Ram       ");
+      console.log("Name without space : ","     Ram       ".trim());
+      console.log("Name without right side space : ", "     Ram       ".trimRight());
+      console.log("Name without left side space : ", "     Ram       ".trimLeft());
+
+      console.log("Search Index : ", "Ram".search("R"));
+      console.log("Ouptput : ", "Ram".includes("m"));
+
+      console.log("Repeat : ", "*".repeat(10));
+
+      console.log("Replace : ", "Temp Content Temp".replace("Temp", "Some"));
+      console.log("Replace All : ", "Temp Content Temp".replaceAll("Temp", "Some"))
+
+      console.log("Match : ", "TempContent".match("Con"));
+
+      console.log("Character : ", "Ram".charAt(0));
+      console.log("Character : ", "Ram"[1]);
+
+      console.log("Startswith : ", "Ram".startsWith("R"));
+      console.log("Endswith : ", "Ram".endsWith("m"));
+
+      console.log("Original Data : ", data);
+    </script>
+  </body>
+</html>
+

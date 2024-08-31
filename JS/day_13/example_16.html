@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input">
+    <script>
+      const input = document.getElementById("input");
+      input.onblur = () => {
+        console.log("Function 1 ....");
+      }
+
+      input.addEventListener("blur", () => {
+        console.log("Function 2 .....")
+      });
+    </script>
+  </body>
+</html>

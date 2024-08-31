@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [10, 20, 30];
+
+      console.log("Length : ", arr.length);
+      console.log("Concat : ", arr.concat([40, 50, 60]));
+
+      arr.push(1000);
+      console.log("Push : ", arr);
+
+      console.log("Pop : ", arr.pop());
+
+      console.log("Shift : ", arr.shift());
+      arr.unshift(100);
+      console.log("Unshift : ", arr);
+
+      console.log("Slice : ", [10, 20, 30, 40].slice(0, 3));
+
+      let newArr = [1000, 2000, 3000, 4000, 5000];
+      console.log("Splice : ", newArr.splice(0, 3));
+      console.log("New Arr : ", newArr);
+
+      console.log("Reverse : ", [10, 20, 30, 40, 50].reverse());
+
+      console.log("Sort : ", [10, 20, 30, 40, 50].reverse().sort());
+
+      let user = ["Ram", 10, "ram@gmail.com", "ram1234", 2000];
+      console.log("Jion : ", user.join(","));
+
+      console.log("Includes : ", [10, 20, 30, 40].includes(50));
+      console.log("Includes : ", [10, 20, 80, 60, 40, 30].includes(30, 3));
+
+      console.log("Fill : ", [10, 20, 30, 40, 50, 60].fill("*"));
+      console.log("Fill : ", [10, 20, 30, 40, 50, 60].fill("*", 1, 5));
+
+
+      newArr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+      newArr.forEach((value, index, array) => {
+        // console.log(value);
+        // console.log(index);
+        // console.log(array);
+      });
+
+      newArr.map((value, index, array) => {
+        // console.log(value);
+        // console.log(index);
+        // console.log(array);
+      });
+
+      console.log("Original Arr : ", arr);
+    </script>
+  </body>
+</html>
+

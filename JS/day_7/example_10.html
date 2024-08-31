@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      /*
+        Example-1
+        ---------
+        console.log("Start ....");
+
+        let i = 1;
+        setInterval(() => {
+          console.log("Running Count: ", i++);
+        }, 2000);
+      
+        console.log("End ....");
+      */
+
+      /*
+        Example-2
+        ---------
+        console.log("Start ....");
+
+        setInterval(function(name) {
+           console.log("Welcome: ", name);
+        }, 2000, "Ram");   
+      
+        console.log("End ....");
+      */
+
+      console.log("Start ....");
+
+      let i = 1;
+      const id = setInterval(() => {
+        if (i == 5) clearInterval(id);
+        console.log("Running Count: ", i++);
+      }, 2000);
+
+      console.log("End ....");
+    </script>
+  </body>
+</html>

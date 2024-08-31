@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Type cast: 
+        ----------
+        convert one data type to another data type
+        example:  
+        --------
+        "100" => 100
+      */
+
+      // Integer To String
+      console.log("Integer To String");
+      let intNum = 100;
+      let strNum = String(intNum); // 100 ==> "100"
+      console.log("Data : ", intNum, " Type : ", typeof intNum);
+      console.log("Data : ", strNum, " Type : ", typeof strNum);
+
+
+      // String To Integer
+      console.log("\n\nString To Integer");
+      strNum = "100";
+      intNum = Number(strNum); // "100" ==> 100
+      console.log("Data : ", intNum, " Type : ", typeof intNum);
+      console.log("Data : ", strNum, " Type : ", typeof strNum);
+
+
+      // String To Boolean
+      console.log("\n\nString To Boolean");
+      let strText = "true";
+      let boolValue = Boolean(strText); // "true" ==> true
+      console.log("Data : ", strText, " Type : ", typeof strText);
+      console.log("Data : ", boolValue, " Type : ", typeof boolValue);
+
+
+      // Integer To Boolean
+      console.log("\n\nInteger To Boolean");
+      intNum = 0;
+      boolValue = Boolean(intNum); // 0 ==> false;
+      console.log("Data : ", intNum, " Type : ", typeof intNum);
+      console.log("Data : ", boolValue, " Type : ", typeof boolValue);
+
+
+      // String To Integer
+      console.log("\n\nString To Integer");
+      strNum = "100";
+      intNum = parseInt(strNum); // "100" ==> 100
+      console.log("Data : ", intNum, " Type : ", typeof intNum);
+      console.log("Data : ", strNum, " Type : ", typeof strNum);
+
+
+      // String To Float
+      console.log("\n\nString To Float");
+      strNum = "100.00";
+      let floatNum = parseFloat(strNum); // "100.00" ==> 100.00
+      console.log("Data : ", floatNum, " Type : ", typeof floatNum);
+      console.log("Data : ", strNum, " Type : ", typeof strNum);
+
+
+      console.log("\n\nUsing (+)");
+      strNum = "100";
+      intNum = +(strNum); // +strNum    // "100" ==> 100
+      console.log("Data : ", intNum, " Type : ", typeof intNum);
+      console.log("Data : ", strNum, " Type : ", typeof strNum);
+
+
+      console.log("\n\nUsing (-)");
+      strNum = "100";
+      intNum = -(strNum); // -strNum    // "100" ==> -100
+      console.log("Data : ", intNum, " Type : ", typeof intNum);
+      console.log("Data : ", strNum, " Type : ", typeof strNum);
+
+    </script>
+  </body>
+</html>

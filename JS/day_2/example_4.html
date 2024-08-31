@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Using let keyword */
+
+      // Outside scope
+      let data = 100;
+      if (true) {
+        console.log("Inside If : ", data);
+      }
+      console.log("Outside If : ", data);
+
+      // Inside Scope
+      if (true) {
+        let num = 100;
+        console.log("Inside If : ", num);
+      }
+      console.log("Outside If : ", num);
+
+    </script>
+  </body>
+</html>

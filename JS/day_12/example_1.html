@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Welcome To Js</h1>
+    </div>
+    <button id="button">Replace</button>
+    <script>
+      const button = document.getElementById("button");
+      const container = document.getElementById("container");
+
+      button.addEventListener("click", () => {
+        const p = document.createElement("p");
+        p.innerHTML = "Welcome To Js";
+        container.firstElementChild.replaceWith(p);
+      });
+    </script>
+  </body>
+</html>

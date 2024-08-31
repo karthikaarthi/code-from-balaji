@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Names</h1>
+    </div>
+    <br>
+    <button id="button">Show Names</button>
+    <script>
+      const container = document.getElementById("container");
+      const button = document.getElementById("button");
+
+      button.onclick = () => {
+        const h1 = createElement("h1", "Ram");
+        const h2 = createElement("h2", "Sam");
+        const h3 = createElement("h3", "Kumar");
+        // container.after(h1);
+        // container.after(h2);
+        // container.after(h3);
+        container.after(h1, h2, h3);
+      }
+      
+      function createElement(elementName, content) {
+        if (elementName == undefined && content == undefined) {
+          throw new Error("Given element name or content is empty ....");
+        } else {
+          const newElement = document.createElement(elementName);
+          newElement.innerHTML = content;
+          return newElement;
+        }
+      }
+
+    </script>
+  </body>
+</html>

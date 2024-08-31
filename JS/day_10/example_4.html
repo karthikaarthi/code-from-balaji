@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Child 1</h1>
+      <h2 id="child">Child 2</h2>
+      <h3>Child 3</h3>
+    </div>
+    <script>
+      const child= document.getElementById("child");
+      console.log("ParentNode: ", child.parentNode);
+      console.log("ParentElement: ", child.parentElement);
+      console.log("ParentElement -> ParentElement: ", child.parentElement.parentElement);
+    </script>
+  </body>
+</html>

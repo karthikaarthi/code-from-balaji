@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn-1">Create New Window</button>
+    <button id="btn-2">Close New Window</button>
+    <script>
+      const createBTN = document.getElementById("btn-1");
+      const closeBTN = document.getElementById("btn-2");
+
+      let newWindow = null;
+      const createWindow = () => {
+        newWindow = window.open(undefined, undefined, undefined);
+      }
+
+      const closeWindow = () => {
+        newWindow.close();
+      }
+
+      createBTN.onclick = createWindow;
+      closeBTN.onclick = closeWindow;
+
+    </script>
+  </body>
+</html>

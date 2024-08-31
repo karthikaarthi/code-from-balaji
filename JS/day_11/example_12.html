@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="user-name">Username: </label>
+      <input type="text" id="user-name" />
+      <br /><br />
+      <label for="email">Email: </label>
+      <input type="text" id="email" />
+      <br /><br />
+      <label for="password">Password: </label>
+      <input type="password" id="password" />
+    </form>
+    <button id="button">Add User</button>
+
+    <br /><br />
+    <div id="container"></div>
+
+    <script>
+      const form = document.forms[0];
+      const inputElements = form.querySelectorAll("input");
+      const button = document.getElementById("button");
+      const container = document.getElementById("container");
+
+      function createTable() {
+        const table = document.createElement("table");
+        table.setAttribute("border", "1");
+        let tr = document.createElement("tr");
+
+        for (let colName of ["Name", "Email", "Password", "Delete"]) {
+          const th = document.createElement("th");
+          th.innerHTML = colName;
+          tr.appendChild(th);
+        }
+
+        table.appendChild(tr);
+        container.appendChild(table);
+        return table;
+      }
+
+      function createRow(user) {
+        const tr = document.createElement("tr");
+        for (let value of Object.values(user)) {
+          const td = document.createElement("td");
+          td.innerHTML = value;
+          tr.appendChild(td);
+        }
+        const td = document.createElement("td");
+        const button = document.createElement("button");
+        button.innerHTML = "DELETE";
+        button.onclick = () => tr.remove();
+
+        td.appendChild(button);
+        tr.appendChild(td);
+        return tr;
+      }
+
+      const table = createTable();
+
+      button.onclick = () => {
+        const newUser = {
+          userName: inputElements[0].value,
+          email: inputElements[1].value,
+          password: inputElements[2].value,
+        };
+        table.appendChild(createRow(newUser));
+      };
+    </script>
+  </body>
+</html>

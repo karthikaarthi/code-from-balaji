@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const user = {
+        name: "Ram",
+        age: 10,
+        email: "ram@gmail.com",
+        password: "ram1234",
+        salary: 1000
+      };
+
+      /* 
+        let name = user.name;
+        let age = user.age;
+        let email = user.email;
+        let password = user.password;
+        let salary = user.salary;
+        console.log(`Name: ${name} Age: ${age} Email: ${email} Password: ${password} Salary: ${salary}`);
+      */
+      const { name, age, email, password, salary } = user;
+      console.log(`Name: ${name} Age: ${age} Email: ${email} Password: ${password} Salary: ${salary}`);
+    </script>
+  </body>
+</html>

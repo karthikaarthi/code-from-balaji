@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <label>Enter Number 1: </label>
+    <input type="text" size="4"> 
+    <br><br>
+
+    <label>Enter Number 2:</label>
+    <input type="text" size="4">
+    <br><br>
+
+    <button style="width:200px;">Add</button>
+    <br>
+
+    <p></p>
+
+    <script>
+      const inputElements = document.getElementsByTagName("input");
+      const button = document.getElementsByTagName("button")[0];
+      const result = document.getElementsByTagName("p")[0];
+
+      button.addEventListener("click", () => {
+        let num1 = Number(inputElements[0].value);
+        let num2 = Number(inputElements[1].value);
+        result.innerHTML = `Sum: ${num1 + num2}`;
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Child 1</h1>
+      <h2>Child 2</h2>
+      <h3>Child 3</h3>
+    </div>
+    <button id="button">Replace</button>
+    <script>
+      const button = document.getElementById("button");
+      const container = document.getElementById("container");
+
+      button.addEventListener("click", () => {
+        const p = createElement("p", "Iam Para");
+        const h4 = createElement("h4", "Iam H4");
+        const div = createElement("div", "Iam Div");
+        container.replaceChildren(p, h4, div);
+      });
+
+      function createElement(elementName, content) {
+        const newElement = document.createElement(elementName);
+        newElement.innerHTML = content;
+        return newElement;
+      }
+
+    </script>
+  </body>
+</html>

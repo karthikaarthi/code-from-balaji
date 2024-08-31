@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="input">
+      <button>Add New Name</button>
+      <br><br>
+      <ul></ul>
+    </div>
+    <script>
+      const input = document.getElementById("input");
+      const parent = input.parentElement;
+      const button = parent.children[1];
+      const ul = parent.children[4];
+
+      button.addEventListener("click", addNewName);
+
+      function addNewName() {
+        const newName = input.value;
+        ul.innerHTML += `<li> ${newName} </li>`;
+      }
+
+    </script>
+  </body>
+</html>

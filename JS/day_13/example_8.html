@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="button">Leave Me</button> 
+    <script>
+      const button = document.getElementById("button");
+      button.onmouseout = () => {
+        console.log("Function 1 work ....");
+      }
+
+      button.addEventListener("mouseout", () => {
+        console.log("Function 2 work ....");
+      });
+    </script>
+  </body>
+</html>

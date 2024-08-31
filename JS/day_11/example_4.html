@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input">
+    <button id="button">Add New Name</button>
+    <br><br>
+    <div id="container"></div>
+    <script>
+      const input = document.getElementById("input");
+      const button = document.getElementById("button");
+      const container = document.getElementById("container");
+
+      button.onclick = () => {
+        const h1 = document.createElement("h1");
+        const textContent = document.createTextNode(input.value);
+        h1.append(textContent);
+        container.append(h1);
+      }
+    </script>
+  </body>
+</html>
